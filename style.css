@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0px;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -275,14 +279,16 @@ section{
     font-family: 'Nunito', sans-serif;;
 }
 
-.contact-desc{
-    margin-top: 75px;
-}
-
 .c-icon {
     display: flex;
     flex-direction: row;
     margin-right: 15px;
     font-size: 60px;
+}
+
+.contact-desc{
+
+    margin-bottom: 50px;
+    color : #000;
 }
 
