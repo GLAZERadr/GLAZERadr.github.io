@@ -13,11 +13,14 @@
             <div class= "header" style = "height: auto;"> 
                 <a><img src = "Logo.png" alt = "Logo" style = "width: 90px;"></a>
             </div>
-            <form class = "hire-form">
-                <input class = "control" type = "text" placeholder= "Job Description">               
-                <input class = "control" type = "text" placeholder= "Price">
-                <input class = "control" type = "text" placeholder="Role">
-                <input class = "control" type = "date">
+            <form class = "hire-form" action="https://formsubmit.co/e8ad476e1beb4c2e20a678c1279a5ca2" method="POST">
+                <textarea class = "control" placeholder= "Job Description" name = "Job Description" required></textarea>              
+                <input class = "control" type = "text" placeholder= "Price" name = "price" required>
+                <select class = "control" type = "text" placeholder="Role">
+                    <option>Programmer</option>
+                    <option>Business Analyst</option>
+                    <option>Cloud Engineer</option>
+                <input class = "control" type = "date" name = "date" required>
                 <button class = "control">SUBMIT</button>
             </form>
         </div>
