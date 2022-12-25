@@ -1,101 +1,43 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
-    <link rel="icon" href="Logo.png" type = "image/icon type">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel = "stylesheet" type = "text/css" href = "style.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = stylesheet type = "text/css" href = "style.css">
+    <title>Happy Birthday!</title>
 </head>
-<body style = "background: #536976">
-
-    <header>
-        <label>
-            <input type = "checkbox">
-            <div class = "hamburger">
-                <span class = "top_line common"></span>
-                <span class = "middle_line common"></span>
-                <span class = "bottom_line common"></span>
-            </div>
-
-            <div class = "slide">
-                <ul class = "i-button">
-                    <img src = "Logo.png" alt = "Logo" style = "width: 100px;">
-                    <li class = "button"><a href = hire.html><ion-icon name="card-outline"></ion-icon>HIRE</a></li>
-                    <li class = "button"><a href = #><ion-icon name="document-outline"></ion-icon>PROJECT</a></li>
-                    <li class = "button"><a href = #><ion-icon name="person-outline"></ion-icon>BIOGRAPHY</a></li>
-                </ul>
-        </label>    
-    </header>
-
-    <div id = "home">
-        <section id = "home">
-            <div class="left-char">
-                <h1 style = "--clr: #2193B0">Hi! I'm Adrian</h1>
-                <p style = "font-size: 1rem;">i'm an undergraduate data scientist student in telkom university</p>
-            </div>
-            <div class = "avatar">
-                <img src = "avatar.png" alt="avatar">
-            </div>
-        </section>
-    </div>
-
-    <div class = "skill-name">
-        <h1>MY SKILL</h1> 
-    </div>
-
-    <div id = "skill" class = "skill-container">
-        <div class = "box" style = "--clr: #FFF">
-            <div class="content">
-                <div class = "icon"><ion-icon name="code-slash-outline"></ion-icon></div>
-                <div class = "text">
-                    <h3>PROGRAMMER</h3>
-                    <p style = "font-family: 'Nunito', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
+<body>
+    <section>
+        <div class="ucapan">
+            <h1 data-text = "Happy 20th Birthday!"></h1>
+            <p>Hope that all of your dream can come true<br>Good Luck<br>Wish You All The Best</p>
+            <button id = "button_song" onclick = play_music()>Click Here!</button>
         </div>
-
-        <div class = "box" style = "--clr: #39FF14">
-            <div class="content">
-                <div class = "icon"><ion-icon name="cash-outline"></ion-icon></div>
-                <div class = "text">
-                    <h3>BUSINESS ANALYST</h3>
-                    <p style = "font-family: 'Nunito', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
+        <div class="card">
+            <div class="scroll">
+                <div class="icon"><ion-icon name="arrow-down-circle-outline"></ion-icon></div>
+                <h3>Scroll Here!</h3>
             </div>
-        </div>
-
-        <div class = "box" style = "--clr: #1F51FF">
-            <div class="content">
-                <div class = "icon"><ion-icon name="cloud-outline"></ion-icon></div>
-                <div class = "text">
-                    <h3>CLOUD ENGINEER</h3>
-                    <p style = "font-family: 'Nunito', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
+            <div class="cake">
+                <img src =mati.png  alt = "birthday" class = "birthday" id = "cake">
             </div>
+            <div class="container">
+                <span id="hours">00</span>
+                <span>:</span>
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+                <span id="session">AM</span>
+            </div>
+            <p style = "font-weight: bold; font-size: large; margin: 0;">Happy Birthday kak ayu<br>after make a wish please click that button below</p>
+
+            <button onclick=tiup_lilin() id = "button_cake_mati">Tiup Lilin!</button>
         </div>
-    </div>
+    </section>
 
-    <div id = "contact" class = "contact-name" style = >
-        <h1>CONTACT ME</h1>
-    </div>
-
-    <div class = "contact">
-        <ul class = "c-icon">
-            <li class = "c-but"><a href = "www.linkedin.com/in/adrian-putra-pratama-badjideh-8a2492238"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-            <li class = "c-but"><a href = "https://github.com/GLAZERadr"><ion-icon name="logo-github"></a></li>
-            <li class = "c-but"><a href = "https://wa.me/6281239936538"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
-        </ul>
-    </div>
-
-    <div class = "contact-desc">
-        <p style = "text-align: center;">©built in 2022 | created by<br>Adrian Putra Pratama Badjideh<br>Telkom University</p>
-    </div>
-
+    <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
