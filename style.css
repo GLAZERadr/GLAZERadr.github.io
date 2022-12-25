@@ -1,0 +1,140 @@
+body{
+    font: 400 15px/1.8 "Lato", sans-serif;
+    background: linear-gradient(150deg, #252525 0%, #4951b5 75%);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+	height: 100%;
+}
+  
+
+section i{
+    position: absolute;
+    border: 1px solid #ff2a2a;
+    background: transparent;
+    border-radius: 100%;
+    animation: animated 5s linear infinite;
+}
+
+section i:nth-child(even){
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+@keyframes animated{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(480px);
+        opacity: 0;
+    }
+}
+
+.ucapan{
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 125px;
+    margin-bottom: 55px;
+}
+
+#button_song{
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    background-color: #37B;
+    border: none;
+    color: #252525;
+    padding: 16px 46px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 50px;
+    margin: 0;
+    color: #37B;
+    -webkit-text-stroke: 0.3vw, #252525;
+}
+
+h1::before{
+    content: attr(data-text);
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #37B;
+    -webkit-text-stroke: 0vw, #252525;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate{
+    0%, 10%, 100%{
+        width: 0;
+    }
+    70%, 90%{
+        width: 100%;
+    }
+}
+
+.card{
+    background: linear-gradient(150deg, #252525 0%, #4951b5 75%);
+    margin-top:230px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    height: 84vh;
+    width: 50vw;
+    text-align: center;
+}
+
+.scroll{
+    display: flex;
+    justify-content: center;
+
+}
+
+.icon{
+    font-size: 45px;
+}
+
+img.birthday{
+    max-height: 40vh;
+    margin: 0;
+}
+
+.container{
+    font-weight: bold;
+    position: inherit;
+    font-size: 30px;
+}
+
+#button_cake_mati{
+    margin-top: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    background-color: #37B;
+    border: none;
+    color: #252525;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-weight: bold;
+}
