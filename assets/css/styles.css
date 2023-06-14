@@ -784,10 +784,18 @@ img {
     .qualification__data{
         gap: .5rem;
     }
+
+    .project__container
+    {
+        flex-direction: column;
+        display: flex;
+        overflow: initial;
+        width: 100%;
+    }
 }
 
 /* For medium devices */
-@media screen and (min-width: 500px){
+@media screen and (min-width: 560px){
     .home__content{
         grid-template-columns: max-content 1fr 1fr;
     }
