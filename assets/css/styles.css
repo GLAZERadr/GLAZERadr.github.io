@@ -378,7 +378,8 @@ img {
 /*==================== ABOUT ====================*/
 .about__description{
     text-align: center;
-    margin-bottom: var(--mb-2-5);
+    margin: var(--mb-2-5);
+    text-align: justify;
 }
 
 .about__info{
